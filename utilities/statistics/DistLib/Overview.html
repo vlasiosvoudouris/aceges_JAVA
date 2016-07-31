@@ -1,0 +1,113 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="GENERATOR" content="Mozilla/4.5 [en] (WinNT; I) [Netscape]">
+    <title>Java Distribution Functions</title>
+  </head>
+  <body bgcolor="#EEFFEE">
+    
+    <center>
+      <h1>
+	Java Distribution Functions</h1></center>
+    
+    <p>
+    	A java library of distributions functions based on the R distribution functions.
+    </p>
+
+    <p>
+      This code based on an auto translation. 
+      The translation isn't entirely pretty (especially since some of
+      the C code was originally translated from Fortran), but it seems
+      to work.  Classes implement the PDF, CDF, and (usually) quantile
+      and random variate generation for the following distributions:
+
+      <center>
+	<table cellspacing="1" cellpadding="1">
+	  <tr> 
+	    <td>beta</td> 
+	    <td>hypergeometric</td> 
+	    <td>normal</td> 
+	  </tr>
+	  <tr> 
+	    <td>binomial</td> 
+	    <td>logistic</td> 
+	    <td>poisson</td> 
+	  </tr>
+	  <tr> 
+	    <td>cauchy</td> 
+	    <td>lognormal</td> 
+	    <td>signrank</td> 
+	  </tr>
+	  <tr> 
+	    <td>chisquare</td> 
+	    <td>negative_binomial</td> 
+	    <td>t</td> 
+	  </tr>
+	  <tr> 
+	    <td>exponential</td> 
+	    <td>noncentral_beta</td> 
+	    <td>tukey</td> 
+	  </tr>
+	  <tr> 
+	    <td>f</td> 
+	    <td>noncentral_chisquare</td> 
+	    <td>uniform</td> 
+	  </tr>
+	  <tr> 
+	    <td>gamma</td> 
+	    <td>noncentral_f</td> 
+	    <td>weibull</td> 
+	  </tr>
+	  <tr> 
+	    <td>geometric</td> 
+	    <td>noncentral_t</td> 
+	    <td>wilcox</td> 
+	  </tr>
+	</table>
+      </center>
+    <p>
+      The java code, compiled classes, and (rudimentary) javadoc documentation
+      is available as a jar file from 
+    <blockquote>
+      <a href="http://sourceforge.net/project/showfiles.php?group_id=16634">
+	http://sourceforge.net/project/showfiles.php?group_id=16634</a>
+    </blockquote>
+
+    <p>
+      Comments:
+    <ul>
+      <li> These functions compile without error, but are mostly
+	untested.  
+
+      <li> The javadoc documentation is very
+	rudimentary. Additional documentation is available in the
+	comments copied from the original c code.
+
+      <li> Other than grouping the PDF, CDF, etc into a single class for each
+	distribution, the files don't (yet) make much use of OO design.
+
+      <li> Most of the credit for these function rightly goes to Ross
+	Ihaka for putting the C library together.
+    </ul>
+
+    <p>
+      Patches, comments, etc welcome.  Please submit at the 
+      <a href="http://sourceforge.net/projects/statdistlib/"> 
+	SourceForge project page</a>
+      
+
+<h2><u>News</u></h2>
+
+<h3>2007-05-19 - Updated to use jakarta commons libraries and with JUnit testing.</h3>
+
+<h3>2002-04-19 - Now Hosted At</h3>
+
+   <A href="http://sourceforge.net"> 
+      <IMG src="http://sourceforge.net/sflogo.php?group_id=16634&type=5"
+           width="210" height="62" border="0" alt="SourceForge Logo">
+   </A>
+
+
+</body>
+</html>
